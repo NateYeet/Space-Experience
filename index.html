@@ -6,20 +6,12 @@
       <audio src="Assets/Space.mp3" preload autoplay loop></audio>
     </head>
     <body>
-        <!-- HOMEWORK: Create a solar system:
-        - Add a sky with space.jpg as src
-        - Add a sphere with planet.jpg
-        - Position the sphere using x y z position values
-        - Add multiple spheres, one for each planet
-        - For earth, use the image earth.jpg
-        - Change the position to make them appear in a order.
-        -->
 
 
         <a-scene camera look-controls position="0 1.6 0">
  
           <a-sky src="Assets/space.jpg"></a-sky>
-<a-entity id="Planets">
+<a-entity sound="src: url(Assets/Space.mp3); loop: true; volume: 10; autoplay: true" id="Planets">
           <a-sphere class="Star" id="Sun" scale="2 2 2" position="-7 2 -5" src="Assets/Sun.png"></a-sphere>
           <a-sphere class="planet" id="Mecury" scale="0.6 0.6 0.6" position="-3 2 -5" src="Assets/Mecury.jpg"></a-sphere>
           <a-sphere class="planet" id="Venus" scale="0.8 0.8 0.8" position="0 2 -5" src="Assets/Venus.png"></a-sphere>
