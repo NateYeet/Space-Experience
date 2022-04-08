@@ -3,7 +3,15 @@
         <title>Outer Space</title>
         <script src="https://aframe.io/releases/1.0.3/aframe.min.js">
         </script>
-      <audio src="Assets/Space.mp3" preload autoplay loop></audio>
+      <audio src="Assets/Space.mp3" preload></audio>
+      <script>
+      function onLoad(){
+      document.cookie = "username=VisitedSpace=1; expires=31 Dec 9999 12:00:00 UTC";
+      };
+
+
+      onLoad()
+      </script>
     </head>
     <body>
 
