@@ -7,7 +7,9 @@
       <script>
       function onLoad(){
       document.cookie = "HasVisitedSpace=True; expires=31 Dec 9999 12:00:00 UTC";
+      console.log('Page Loaded')
       };
+
 
 
       onLoad()
@@ -17,7 +19,11 @@
 
 
         <a-scene camera look-controls position="0 1.6 0">
- 
+ <a-assets>
+
+
+
+ </a-assets>
           <a-sky sound="src: url(Assets/Space.mp3); loop: true; volume: 7; autoplay: true" src="Assets/space.jpg"></a-sky>
 <a-entity  id="Planets">
           <a-sphere class="Star" id="Sun" scale="2 2 2" position="-7 2 -5" src="Assets/Sun.png"></a-sphere>
@@ -34,6 +40,12 @@
 </a-entity>
           <a-entity id="Text">
          
+
+          </a-entity>
+          <a-entity id="TextsBacking">
+            <a-entity obj-model="obj: url(Assets/Yuan.obj); mtl: url(Assets/Yuan.mtl)" rotation="0 90 70" position="-7.123 0.729 -2.152"></a-entity>
+
+
 
           </a-entity>
 
